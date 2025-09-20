@@ -19,6 +19,9 @@ def get_success_url(request):
         return request.GET['next']
     else:
         return reverse('jobapp:home')
+    
+def profile_view(request):
+    return render(request, 'profile.html') 
 
 
 
